@@ -73,3 +73,71 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+
+section p:first-of-type {
+    text-indent: 20px;
+  }
+  
+  a {
+    color: #a66;
+    text-decoration: underline;
+    outline: none;
+  }
+  
+  a:hover, a:focus {
+    text-decoration: none;
+    color: #822;
+  }
+  
+  a:visited {
+    color: #644;
+  }
+  
+  a:active {
+    color: #c33;
+    font-weight: bold;
+  }
+  
+  a[href^="http"]::after {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url('external-link-52.png') no-repeat center center;
+    background-size: contain;
+    margin-left: 5px;
+  }
+  
+  ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  li {
+    line-height: 1.6;
+    list-style-type: square;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    padding: 10px 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    background: #a66;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  nav ul li a:hover {
+    background: #822;
+  }
+  
