@@ -26,24 +26,40 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
-  }
-  
-  nav {
-    background-color: #000;
-    padding: .5em;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: .5em 1em;
-  }
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+  article {
+  flex: 2;
+}
+
+  aside {
+  flex: 1;
+}
+
+nav {
+  background-color: #000;
+  padding: .5em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
   
   .photos {
     list-style: none;
