@@ -1,0 +1,25 @@
+// Mateo Awon-Magliaro
+// 2025-03-25
+// Description: Displays images on a webpage
+const displayedImage = document.querySelector('.displayed-img');
+const thumbBar = document.querySelector('.thumb-bar');
+const btn = document.querySelector('button');
+const overlay = document.querySelector('.overlay');
+
+/* Image filenames and alt texts */
+const imageFilenames = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
+const altTexts = [
+  'Closeup of a human eye',
+  'Rock that looks like a wave',
+  'Purple and white pansies',
+  'Section of wall from a pharaoh\'s tomb',
+  'Large moth on a leaf'
+];
+
+/* Create thumbnails */
+
+  /* Click handler for thumbnails */
+
+
+/* Darken/Lighten button */
+
