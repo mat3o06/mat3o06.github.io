@@ -17,9 +17,18 @@ const altTexts = [
 ];
 
 /* Create thumbnails */
-
-  /* Click handler for thumbnails */
-
+imageFilenames.forEach((filename, index) => {
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src', `images/${filename}`);
+    newImage.setAttribute('alt', altTexts[index]);
+    thumbBar.appendChild(newImage);
+    
+    /* Click handler for thumbnails */
+    newImage.addEventListener('click', () => {
+      displayedImage.src = newImage.src;
+      displayedImage.alt = newImage.alt;
+    });
+  });
 
 /* Darken/Lighten button */
 
