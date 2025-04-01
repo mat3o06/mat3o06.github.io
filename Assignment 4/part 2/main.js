@@ -31,4 +31,9 @@ imageFilenames.forEach((filename, index) => {
   });
 
 /* Darken/Lighten button */
-
+btn.addEventListener('click', () => {
+    const isDark = btn.getAttribute('class') === 'dark';
+    btn.setAttribute('class', isDark ? 'light' : 'dark');
+    btn.textContent = isDark ? 'Lighten' : 'Darken';
+    overlay.style.backgroundColor = isDark ? 'rgba(0,0,0,0.5)' : 'rgba(0,0,0,0)';
+  });
