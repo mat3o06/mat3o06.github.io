@@ -1,3 +1,6 @@
+//Mateo Awon-Magliaro
+// 2025-04-08
+//Adding accessability to a webpage
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
